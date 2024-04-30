@@ -2,12 +2,13 @@
   hosts: localhost
   tasks:
   - name: PLAY 1 and TASK 1
-    ansible.builtin.default:
+    ansible.builtin.debug:
       msg: "Hello I am from Play1 and Task 1"
+      
 - name: play 2
   hosts: localhost
   tasks:
   - name: PLAY 2 and TASK 2
-    ansible.builtin.default:
+    ansible.builtin.debug:
       msg: "Hello I am from Play2 and Task 2"
 
