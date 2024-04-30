@@ -4,6 +4,7 @@
     course: Devops with AWS
     trainer: Sivakumar M
     duration: 3.5 months
+
   tasks:
   vars: #Variable at task level
     course: Terraform
@@ -13,7 +14,7 @@
     ansible.builtin.debug:
       msg: "Hi I am learning Course {{ course }} from Trainer {{ trainer }} and Duration is {{ duration }}"
 
-  - name: print information from play level
-    ansible.builtin.debug:
-      msg: "Hi I am learning Course {{ course }} from Trainer {{ trainer }} and Duration is {{ duration }}"
+- name: print information from play level
+  ansible.builtin.debug:
+    msg: "Hi I am learning Course {{ course }} from Trainer {{ trainer }} and Duration is {{ duration }}"
     
