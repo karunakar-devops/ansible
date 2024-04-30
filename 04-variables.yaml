@@ -1,5 +1,5 @@
 - name: variables 
-  hosts: app
+  hosts: localhost
   vars: # variable declaration
     course: Devops
     Trainer: siva 
@@ -7,6 +7,6 @@
   tasks:
   - name: variables
     ansible.builtin.debug:
-      msg: "Hi I am learning{{ course }} Course from Trainer {{ Trainer }} and duration is{{ Duration }}"
+      msg: "Hi I am learning {{ course }} Course from Trainer {{ Trainer }} and duration is {{ Duration }}"
     
     
