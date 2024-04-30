@@ -1,20 +1,20 @@
 - name: variables
   hosts: localhost
-  vars: #varaiabe at play level
+  vars: #variables at play level
     course: Devops with AWS
     trainer: Sivakumar M
     duration: 3.5 months
 
   tasks:
   - name: print information from task level
-    vars: #Variable at task level
+    vars: #Variables at task level
       course: Terraform
       trainer: Sivakumar M
       duration: 15 hrs
     ansible.builtin.debug:
       msg: "Hi I am learning Course {{ course }} from Trainer {{ trainer }} and Duration is {{ duration }}"
 
-  # - name: print information from play level
-  #   ansible.builtin.debug:
-  #     msg: "Hi I am learning Course {{ course }} from Trainer {{ trainer }} and Duration is {{ duration }}"
+  - name: print information from play level
+    ansible.builtin.debug:
+      msg: "Hi I am learning Course {{ course }} from Trainer {{ trainer }} and Duration is {{ duration }}"
     
