@@ -2,15 +2,15 @@
   hosts: web
   become: yes
   tasks:
-    - name: installing package
-      ansible.builtin.dnf:
-      - name: nginx
-        state: latest
+  - name: installing package
+    ansible.builtin.dnf:
+    - name: nginx
+      state: latest
 
-    - name: starting service
-      ansible.builtin.service:
-      - name: nginx
-        state: present
-        enabled: yes
+  - name: starting service
+    ansible.builtin.service:
+    - name: nginx
+      state: present
+      enabled: yes
 
        
