@@ -6,7 +6,7 @@
       msg: "Hi I am learning {{ course }} Course from Trainer {{ Trainer }} and duration is {{ Duration }}"
   
   vars: # variable declaration
-    course: Devops
-    Trainer: siva 
+    course: Devops with AWS
+    Trainer: siva kumar
     Duration: 120hrs
     
