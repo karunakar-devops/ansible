@@ -2,4 +2,4 @@
   hosts: web
   modules:
   - name: pinging the server
-    ansible.builtin.ping
+    ansible.builtin.ping:
