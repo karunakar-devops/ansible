@@ -1,0 +1,22 @@
+- name: data types
+  hosts: web
+  vars:
+    course: Devops with AWS
+    Tools:
+    - linux
+    - shell
+    - ansible
+    - terraform
+    Experience: 
+      Devops: 4
+      AWS: 3
+      Linux: 2
+      Shell: 1
+
+    Realproject: true
+    
+  tasks:
+  - name: print variables
+    ansible.builtin.debug:
+      msg: I am Learning Course {{course}} covering Tools{{Tools}} and having Experience in {{Experience}} with Realproject {{Realproject}}"  ""
+     

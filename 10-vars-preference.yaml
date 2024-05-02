@@ -16,6 +16,10 @@
       msg: "Hello Ramesh, Good {{WISHES}}"
 
 
-# 1. from task variable
-# 2. from files 
-# 3. from prompt
+# 1. arguments
+# 2. task variable
+# 3. files 
+# 4. prompt
+# 5. play variable
+# 6. Inventory
+# 7. roles
