@@ -3,6 +3,6 @@
   tasks:
   - name: print information
     vars:
-    timings: "7:15 IST"
+      timings: "7:15 IST"
     ansible.builtin.debug:
       msg: " Hi I am learning Course {{course}} from trainer {{trainer}} duration is:{{duration}} timings are {{timings}}"
