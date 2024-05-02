@@ -6,8 +6,8 @@
   - name: WISHES
     prompt: Please enter WISHES
     private: false
-  vars_files:
-    - vars.yaml
+  # vars_files:
+  #   - vars.yaml
   tasks:
   - name: check preference
     # vars:
@@ -16,4 +16,6 @@
       msg: "Hello Ramesh, Good {{WISHES}}"
 
 
-# 1. task variable
+# 1. from task variable
+# 2. from files 
+# 3. 
