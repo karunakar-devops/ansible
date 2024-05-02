@@ -10,7 +10,10 @@
     - vars.yaml
   tasks:
   - name: check preference
-    vars:
-      WISHES: "Morning from task variable"
+    # vars:
+    #   WISHES: "Morning from task variable"
     ansible.builtin.debug:
       msg: "Hello Ramesh, Good {{WISHES}}"
+
+
+# 1. task variable
